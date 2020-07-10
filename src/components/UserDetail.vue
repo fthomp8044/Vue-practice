@@ -6,7 +6,6 @@
         <p>User Name: {{ switchAge}}</p>
         <button @click="resetName">Reset Name</button>
         <button @click="resetFn()">Reset Name</button>
-
     </div>
 </template>
 

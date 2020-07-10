@@ -6,6 +6,7 @@
         <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-6">
+              <!-- pass myName as a prop -->
                 <app-user-detail :myName="name" @nameWasReset="name = $event" :resentFn="resetName" :userAge="age"></app-user-detail>
             </div>
             <div class="col-xs-12 col-sm-6">

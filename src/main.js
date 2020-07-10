@@ -5,3 +5,6 @@ new Vue({
   el: '#app',
   render: h => h(App)
 })
+
+//eventBus is a new Vue instance!
+export const eventBus = new Vue();
