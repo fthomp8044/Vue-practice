@@ -3,7 +3,7 @@
         <h3>You may view the User Details here</h3>
         <p>Many Details</p>
         <p>User Name: {{ switchName() }}</p>
-        <p>User Name: {{ switchAge}}</p>
+        <p>User Name: {{ myName }}</p>
         <button @click="resetName">Reset Name</button>
         <button @click="resetFn()">Reset Name</button>
     </div>
@@ -23,7 +23,7 @@
         return this.myName.split('').reverse().join('');
       },
       resetName() {
-        this.name = 'Max';
+        this.name = 'Fred';
         this.$emit('nameWasReset', this.myName);
       }
     }

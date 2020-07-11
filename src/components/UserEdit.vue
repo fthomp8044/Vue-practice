@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-
+//import our centralized event Bus so we can use this component anywhere Child or Parent
 import { eventBus } from '../main'
 
 export default {
@@ -16,7 +16,8 @@ export default {
     editAge() {
       this.userAge = 30;
       // this.$emit('ageWasEdited', this.userAge);
-      eventBus.$emit('ageWasEdited', this.userAge)
+      // eventBus.$emit('ageWasEdited', this.userAge)
+      eventBus.changeAge(this.userAge);
     }
   }
 }
